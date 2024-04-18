@@ -1,0 +1,132 @@
+.main {
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading {
+  font-size: 30px;
+  margin-top: 150px;
+}
+.name {
+  color: hsl(250, 66%, 71%) ;
+}
+#effect {
+  font-size: 50px;
+}
+#anime {
+  color: #29cde2;
+}
+.btn {
+  display: flex;
+  margin-top: 80px;
+  gap: 40px;
+  height: 100px;
+}
+#btn1 {
+  height: 60px;
+  width: 180px;
+  border-radius: 15px;
+  background-color: #11111f;
+  color: hsl(250, 66%, 71%) ;
+  font-size: 18px;
+  font-weight: bolder;
+  border: 2px solid;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#btn1:hover {
+  background-color: hsl(250, 66%, 71%) ;
+  color: black;
+}
+#btn2 {
+  height: 60px;
+  width: 100px;
+  border-radius: 15px;
+  /* background-color: rgb(167, 150, 226) ; */
+  background-color: hsl(250, 66%, 71%) ;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+}
+.icons {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 25%;
+  margin-top: 20%;
+}
+.linkedin {
+  background-color: #262135;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  box-shadow: 0px 2px 4px;
+  cursor: pointer;
+  border: none;
+  transition: 0.4s;
+}
+.linkedin:hover {
+  background-color: hsl(250, 66%, 71%) ;
+}
+.lucide:hover {
+  stroke: white;
+}
+
+.git {
+  background-color: #262135;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  box-shadow: 0px 2px 4px;
+  border: none;
+  transition: 0.4s;
+}
+.git:hover {
+  background-color: hsl(250, 66%, 71%) ;
+}
+
+.youtube {
+  background-color: #262135;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  border: none;
+    box-shadow: 0px 2px 4px;
+  transition: 0.4s;
+}
+.youtube:hover {
+  background-color: hsl(250, 66%, 71%) ;
+}
+.line {
+  border-left: 2px solid hsl(250, 66%, 71%) ;
+  height: 40px;
+  margin-left: 15px;
+}
+.scroll {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 25%;
+    margin-top: 20%;
+    writing-mode:vertical-lr;
+    gap: 10px;
+    color: hsl(250, 66%, 71%) ;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
