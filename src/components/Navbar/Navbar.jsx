@@ -11,6 +11,7 @@ function Navbar() {
     <span class="slider"></span>
 </label>
     </div>
+  
   )
 }
 

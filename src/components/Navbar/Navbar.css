@@ -4,11 +4,14 @@
     background-color: #11111f;
     display: flex;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     color: aliceblue;
-  
-    justify-content: center;
+    display: flex;
+}
+.text{
+  position: absolute;
+  left: 50px;
 }
 .folio{
     color: hsl(250, 66%, 71%) ;

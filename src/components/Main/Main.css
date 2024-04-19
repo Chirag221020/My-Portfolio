@@ -7,20 +7,40 @@
   flex-direction: column;
 }
 .heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   font-size: 30px;
   margin-top: 150px;
+  gap: 5px;
+}
+.img1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 120px;
+}
+.character{
+  height: 500px;
 }
 .name {
   color: hsl(250, 66%, 71%) ;
+font-size: 40px ;
+}
+.ml{
+  font-size: 20px;
 }
 #effect {
   font-size: 50px;
 }
 #anime {
   color: #29cde2;
+  font-size: 20px;
 }
 .btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 80px;
   gap: 40px;
   height: 100px;

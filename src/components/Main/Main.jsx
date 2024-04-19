@@ -1,15 +1,18 @@
 import React from "react";
 import "./Main.css";
 import { Typewriter, Cursor } from "react-simple-typewriter";
+import animate from "./Animation - 1713443331137.json"
+import animate2 from './Animation - 1713468490802.json'
+import Lottie from "lottie-react";
 
 function Main() {
   return (
     <div className="main">
       <h1 className="heading">
-        Hey, I'm <span className="name">Chirag Singh Chouhan</span>
+      
+      <h1 className="ml"> Hey, I'm</h1>
+         <span className="name">Chirag Singh Chouhan</span>
         <h1 id="effect">
-          {" "}
-          I'm a{" "}
           <span id="anime">
             {" "}
             <Typewriter
@@ -25,7 +28,7 @@ function Main() {
       </h1>
       <div className="btn">
         <button id="btn1">Download CV</button>
-        <button id="btn2">About</button>
+        <button id="btn2"><a href="#">About</a></button>
       </div>
 
       {/* icon */}
@@ -54,10 +57,12 @@ function Main() {
         </div></div>
         <div className="scroll">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="40" viewBox="0 0 24 24" fill="none" stroke="#a796e2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mouse"><rect x="5" y="2" width="14" height="20" rx="7"/><path d="M12 6v4"/></svg>
-        <h1 className="page-down">Scroll Down</h1>
+        <h1 className="page-down"><a href="#about">Scroll Down</a></h1>
         </div>
         
 
+      <div className="img1">
+      <Lottie animationData={animate2} className="character"/></div>
 
     </div>
   );

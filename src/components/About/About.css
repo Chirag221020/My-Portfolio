@@ -1,0 +1,134 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+    height: 50vh;
+    overflow: hidden;
+    gap: 40px;
+
+}
+.intro{
+    font-size: 15px;
+    text-align: center;
+}
+#top{
+    font-size: 15px;
+    color: gray;
+}
+#bottom{
+    font-size: 25px;
+    color: hsl(250, 66%, 71%) ;
+}
+.contain{
+    display: flex;
+    
+    gap: 30px;
+}
+.char2{
+    height: 280px;
+    width: 280px;
+    background-color: rgb(69, 60, 88);
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.contain2{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+  
+}
+.boxes{
+    display: flex;
+    gap: 40px;
+}
+.box1{
+    height: 120px;
+    width: 180px;
+    border-radius: 15px;
+    background-color: #221f2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+
+
+}
+.exp{
+    font-size: 20px;
+}
+.complete{
+    font-size: 20px;
+}
+.support{
+    font-size: 20px;
+}
+.fresher{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+}
+.proj{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+}
+.sprt{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+}
+.box2{
+    height: 120px;
+    width: 180px;
+    border-radius: 15px;
+    background-color: #221f2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+/* .lucide-briefcase{
+    margin-top: 20px;
+} */
+.box3{
+    height: 120px;
+    width: 180px;
+    border-radius: 15px;
+    background-color: #221f2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.btn3{
+    height: 50px;
+    width: 150px;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: hsl(250, 66%, 71%) ;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+#btn3{
+    color: black;
+}
+.char2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.img{
+
+    height: 240px;
+    text-align: center;
+}
