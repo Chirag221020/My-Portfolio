@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import "./Projects.css";
-import cover2 from "./form.png"
+// import cover2 from "./form.png"
 const items = [
   {
     id: 1,
-    title: "Fully Responsive Portfolio",
-    img: "https://cdn.dribbble.com/users/6175319/screenshots/15793443/media/8d5cc643d95930e3dade66a88cc4e0f7.png?resize=1000x750&vertical=center",
+    title: "Responsive Portfolio",
+    img: "public/Portfolio.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, facilis totam deserunt aut odio iure dolore eveniet exercitationem ex, est nam eius recusandae qui reprehenderit veritatis hic cumque dolorum impedit!",
     demo:"https://www.youtube.com/ ",
     liveCode: " https://chat.openai.com/c/53696c07-2102-4e06-b894-e94657ca9d9c"
@@ -14,15 +14,16 @@ const items = [
   {
     id: 2,
     title: "CRUD Webiste",
-    img: "https://cdn.dribbble.com/userupload/6808377/file/original-9aae16d1308f6a3a3744a57b2d45c7e5.png?resize=1024x768",
+    img: "public/form.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, facilis totam deserunt aut odio iure dolore eveniet exercitationem ex, est nam eius recusandae qui reprehenderit veritatis hic cumque dolorum impedit!",
     demo:"https://github.com/ ",
     liveCode: "https://chat.openai.com/c/53696c07-2102-4e06-b894-e94657ca9d9c"
   },
   {
     id: 3,
-    title: "Fully Responsive Currency Converter",
-    img: "https://cdn.dribbble.com/userupload/6808377/file/original-9aae16d1308f6a3a3744a57b2d45c7e5.png?resize=1024x768" ,
+    title: "Responsive Currency Converter",
+    img:"public/currencyConverter.png",
+
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, facilis totam deserunt aut odio iure dolore eveniet exercitationem ex, est nam eius recusandae qui reprehenderit veritatis hic cumque dolorum impedit!",
     demo:" https://dribbble.com/",
     liveCode: "https://chat.openai.com/c/53696c07-2102-4e06-b894-e94657ca9d9c "

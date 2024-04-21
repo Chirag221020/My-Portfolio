@@ -10,12 +10,14 @@ import Contact from './components/Contact/Contact'
 import Projects from './components/Projects/Projects'
 import BottomBar from './components/BottomBar/BottomBar'
 
-
 function App() {
+
   const [count, setCount] = useState(0)
 
   return (
     <>
+  
+
    <BottomBar/>
     <section id='main'>
     <Navbar/>
