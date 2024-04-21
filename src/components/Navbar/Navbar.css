@@ -11,6 +11,9 @@
   z-index: 1;
   box-shadow: 1px 1px 10px black;
 }
+.navbarLight{
+  background-color: whitesmoke;
+}
 .nav-content {
   width: 100vw;
   display: flex;

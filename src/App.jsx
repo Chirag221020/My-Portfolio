@@ -9,6 +9,8 @@ import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import BottomBar from "./components/BottomBar/BottomBar";
+import Footer from "./components/Footer/Footer";
+import Loading from "./components/Loading/Loading";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,7 +19,7 @@ function App() {
     <>
       <BottomBar />
       <section id="main">
-        <Navbar />
+        <Navbar/>
         <Main />
       </section>
 
@@ -34,6 +36,7 @@ function App() {
       </div>
       <section id="contact">
         <Contact />
+        <Footer/>
       </section>
     </>
   );

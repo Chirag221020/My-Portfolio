@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 function Navbar() {
+
   return (
     <div className="navbar">
       <div className="nav-content">
@@ -10,11 +11,9 @@ function Navbar() {
             <span className="folio">folio</span>
           </a>
         </h1>
-        {/* <label class="switch">
-    <input type="checkbox"/>
-    <span class="slider"></span>
-</label> */}
-      </div>
+
+
+  </div>
     </div>
   );
 }

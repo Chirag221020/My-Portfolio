@@ -25,7 +25,10 @@ function Main() {
         </h1>
       </h1>
       <div className="btn">
-        <button id="btn1">Download CV</button>
+       <a href="https://drive.google.com/file/d/1GDAcbuhA5KrCxZUSpg_co3bN4deyAEKL/view?usp=sharing" target="blank">
+        
+        <button id="btn1"> 
+        Download CV</button> </a>
         <button id="btn2">
           <a href="#about" id="btn-2">
             About
