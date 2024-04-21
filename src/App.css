@@ -1,23 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth; 
-  scrollbar-width: none; 
-
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
-html{
+html {
+  scroll-behavior: smooth;
+}
 
-scroll-behavior: smooth;
-  }
-
-body{
+body {
   background-color: #11111f;
-  color:aliceblue;
-  font-family:'Poppins',sans-serif;
- 
-
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -33,12 +29,12 @@ body::-webkit-scrollbar {
   height: 100vh;
  
 } */
-a{
+a {
   text-decoration: none;
   text-decoration-color: none;
   text-decoration-style: none;
 }
-section{
+section {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: center;

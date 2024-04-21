@@ -1,23 +1,22 @@
-import React from 'react'
-import './Navbar.css'
+import React from "react";
+import "./Navbar.css";
 function Navbar() {
   return (
-    <div className='navbar'>
-      <div className='nav-content'>
-     
-
-<h1 className='text'>Port
-<span className='folio'>folio</span>
-</h1>
-<label class="switch">
+    <div className="navbar">
+      <div className="nav-content">
+        <h1 className="text">
+          <a href="#main" id="main-heading">
+            Port
+            <span className="folio">folio</span>
+          </a>
+        </h1>
+        {/* <label class="switch">
     <input type="checkbox"/>
     <span class="slider"></span>
-</label>
-      
+</label> */}
       </div>
     </div>
-  
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

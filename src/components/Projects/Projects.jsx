@@ -7,26 +7,26 @@ const items = [
     id: 1,
     title: "Responsive Portfolio",
     img: "public/Portfolio.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, facilis totam deserunt aut odio iure dolore eveniet exercitationem ex, est nam eius recusandae qui reprehenderit veritatis hic cumque dolorum impedit!",
-    demo:"https://www.youtube.com/ ",
-    liveCode: " https://chat.openai.com/c/53696c07-2102-4e06-b894-e94657ca9d9c"
+    desc: "Built a dynamic, fully responsive portfolio using React.js CSS, and Framer Motion. Seamlessly integrated interactive animations to enhance user engagement. Designed to display projects and skills in an attractive layout.",
+    demo: "#main",
+    liveCode: "https://github.com/Chirag221020/Portfolio",
   },
   {
     id: 2,
-    title: "CRUD Webiste",
+    title: "Multi-step Form",
     img: "public/form.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, facilis totam deserunt aut odio iure dolore eveniet exercitationem ex, est nam eius recusandae qui reprehenderit veritatis hic cumque dolorum impedit!",
-    demo:"https://github.com/ ",
-    liveCode: "https://chat.openai.com/c/53696c07-2102-4e06-b894-e94657ca9d9c"
+    desc: "Developed a fully responsive multi-step form using Tailwind CSS and React. Implemented smooth transitions and validations to guide users through the form steps. Created to ensure an intuitive and user-friendly experience.",
+    demo: "https://multistep-form2220.netlify.app/",
+    liveCode: "https://github.com/Chirag221020/Multi-Step-Form",
   },
   {
     id: 3,
-    title: "Responsive Currency Converter",
-    img:"public/currencyConverter.png",
+    title: "Currency Converter",
+    img: "public/currencyConverter.png",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, facilis totam deserunt aut odio iure dolore eveniet exercitationem ex, est nam eius recusandae qui reprehenderit veritatis hic cumque dolorum impedit!",
-    demo:" https://dribbble.com/",
-    liveCode: "https://chat.openai.com/c/53696c07-2102-4e06-b894-e94657ca9d9c "
+    desc: "Built a fully responsive portfolio using HTML, CSS, and JavaScript. Incorporated responsive design for optimal display across various devices. Integrated an API to fetch real-time conversion rates, providing live data to the project.",
+    demo: "https://chirag221020.github.io/currency-converter/",
+    liveCode: "https://github.com/Chirag221020/currency-converter ",
   },
 ];
 
@@ -37,30 +37,36 @@ const Single = ({ item }) => {
     target: ref,
     // offset:["start start", "end start"]
   });
-  const y = useTransform(scrollYProgress, [0,1], [-300,300]);
-  return <section >
-    
-    <div className="container">
-      <div className="wrapper">
-
-      <motion.div className="img-container" ref={ref}>
-
-
-
-      <img src={item.img} alt="" className="project-img"/>
-      </motion.div>
-      <motion.div id="text-container" style={{y}} >
-
-     
-      <h2 className="item-title">{item.title}</h2>
-      <p className="item-desc">{item.desc}</p>
-      <div className="live-btn">
-      <button className="demo"><a href={item.demo} target="blank" className="a-demo"> See Demo</a></button>
-      <button className="demo"><a href={item.liveCode} target="blank" className="a-code"> Live Code</a></button></div>
-      </motion.div>
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  return (
+    <section>
+      <div className="container">
+        <div className="wrapper">
+          <motion.div className="img-container" ref={ref}>
+            <img src={item.img} alt="" className="project-img" />
+          </motion.div>
+          <motion.div id="text-container" style={{ y }}>
+            <h2 className="item-title">{item.title}</h2>
+            <p className="item-desc">{item.desc}</p>
+            <div className="live-btn">
+              <button className="demo">
+                <a href={item.demo} target="blank" className="a-demo">
+                  {" "}
+                  See Demo
+                </a>
+              </button>
+              <button className="demo">
+                <a href={item.liveCode} target="blank" className="a-code">
+                  {" "}
+                  Live Code
+                </a>
+              </button>
+            </div>
+          </motion.div>
+        </div>
       </div>
-    </div>
-  </section>;
+    </section>
+  );
 };
 
 function Projects() {
@@ -83,7 +89,6 @@ function Projects() {
       {items.map((item) => (
         <Single item={item} key={item.id} />
       ))}
-     
     </div>
   );
 }

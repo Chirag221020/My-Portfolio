@@ -10,7 +10,6 @@
 .ability {
   font-size: 15px;
   text-align: center;
- 
 }
 .my-ability {
   font-size: 15px;
@@ -38,7 +37,6 @@
   background-color: #221f2e;
 }
 .webdev {
-  
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -46,28 +44,23 @@
 .frontend {
   color: #9584e6;
   margin-top: 20px;
-  
-  
 }
 .lang {
   display: flex;
   justify-content: center;
   gap: 50px;
-  
 }
-#Frontend-Developer{
-    text-align: center;
+#Frontend-Developer {
+  text-align: center;
 }
 .type1 {
   display: flex;
   flex-direction: column;
   gap: 40px;
-
 }
 #tag1 {
   display: flex;
   gap: 10px;
-
 }
 #html {
   display: flex;
@@ -88,54 +81,51 @@ h4 {
   color: rgb(95, 94, 94);
   margin-top: 5px;
 }
-#css{
-    font-size: 16px;
+#css {
+  font-size: 16px;
 }
 
 /* second container */
 
-.electrical{
-   
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-  .lang2{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    
+.electrical {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
-#Electrical-Engineer{
-    text-align: center;
+.lang2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#Electrical-Engineer {
+  text-align: center;
 }
 /* Media queries for smaller screens */
 @media screen and (max-width: 768px) {
-
-  .skills{
+  .skills {
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 15px;
   }
-.work{
-  gap: 30px;
-}
-.webdev {
-  width: 85vw;
-  height: 300px;
-  border-radius: 15px;
-  background-color: #221f2e;
-  gap: 25px;
-}
-#css{
-  font-size: 14px;
-}
-.electrical {
-  width: 85vw;
-  height: 300px;
-  border-radius: 15px;
-  background-color: #221f2e;
-  gap: 25px;
-}
+  .work {
+    gap: 30px;
+  }
+  .webdev {
+    width: 85vw;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #221f2e;
+    gap: 25px;
+  }
+  #css {
+    font-size: 14px;
+  }
+  .electrical {
+    width: 85vw;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #221f2e;
+    gap: 25px;
+  }
 }
