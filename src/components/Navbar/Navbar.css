@@ -8,7 +8,17 @@
     top: 0;
     color: aliceblue;
     display: flex;
+    z-index: 1;
+    box-shadow: 1px 1px 10px black;
 }
+.nav-content{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .text{
   position: absolute;
   left: 50px;

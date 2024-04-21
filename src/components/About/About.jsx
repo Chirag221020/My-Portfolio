@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css'
 import Lottie from 'lottie-react'
 import char from './Op2mFCXf4d.json'
-import char2 from './coder1.json'
+import char2 from './aboutme.json'
 function About() {
   return (
     <div className='about'>
@@ -15,9 +15,9 @@ function About() {
 
 
       <div className='contain'>
-      <div  className='char2'>
-        <Lottie animationData={char2} className='img'/>
-      </div>
+      {/* <div  className='char2'>
+      </div> */}
+        <Lottie animationData={char2} loop= {true} className='img'/>
 
       <div className='contain2'>
       <div className='boxes'>
@@ -63,7 +63,7 @@ function About() {
         
       </div>
       <div className='contact-me'> <button className='btn3'>
-        <a href="#" id='btn3'> Contact Me</a></button></div>
+        <a href="#contact" id='btn3'> Contact Me</a></button></div>
       </div>
       </div>
     </div>

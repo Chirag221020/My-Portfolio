@@ -81,6 +81,7 @@ font-size: 40px ;
   gap: 10px;
   margin-left: 25%;
   margin-top: 20%;
+  z-index:2;
 }
 .linkedin {
   background-color: #262135;
@@ -100,6 +101,10 @@ font-size: 40px ;
 }
 .lucide:hover {
   stroke: white;
+}
+#btn-2{
+  color: black;
+  /* text-decoration-color: white; */
 }
 
 .git {
@@ -149,4 +154,37 @@ font-size: 40px ;
     color: hsl(250, 66%, 71%) ;
     font-size: 12px;
     letter-spacing: 2px;
+    cursor: pointer;
+    z-index:2;
+}
+#scrl-dwn{
+  text-decoration: none;
+  text-decoration-style: none;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .icons{
+    margin-left: 0;
+    bottom: 30%;
+    padding-left: 40px;
+
+  }
+  .scroll {
+    right: 0;
+    bottom: 30%;
+    padding-right: 40px;
+  }
+  .character{
+      padding-right: 40px;
+      height: 520px;
+      padding-bottom: 50%;
+      }
 }

@@ -28,7 +28,7 @@ function Main() {
       </h1>
       <div className="btn">
         <button id="btn1">Download CV</button>
-        <button id="btn2"><a href="#">About</a></button>
+        <button id="btn2"><a href="#about" id="btn-2">About</a></button>
       </div>
 
       {/* icon */}
@@ -57,7 +57,7 @@ function Main() {
         </div></div>
         <div className="scroll">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="40" viewBox="0 0 24 24" fill="none" stroke="#a796e2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mouse"><rect x="5" y="2" width="14" height="20" rx="7"/><path d="M12 6v4"/></svg>
-        <h1 className="page-down"><a href="#about">Scroll Down</a></h1>
+        <h1 className="page-down"><a href="#about" id="scrl-dwn">Scroll Down</a></h1>
         </div>
         
 

@@ -1,0 +1,190 @@
+.contact {
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.TextContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.formContainer {
+  flex: 1;
+}
+#write {
+  font-size: 100px;
+  line-height: 88px;
+}
+#info {
+  font-weight: 300;
+  line-height: 50px;
+}
+.formContainer {
+  flex: 1;
+  position: relative;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input,
+textarea {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+.submit {
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+
+  background-color: #9584e6;
+  cursor: pointer;
+}
+.phonesvg {
+  /* background-color: rebeccapurple; */
+  display: flex;
+  position: absolute;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+  z-index: -1;
+}
+/* alert button  */
+.success {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 320px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background: #edfbd8;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px -3px #111;
+}
+
+.success__icon {
+  width: 20px;
+  height: 20px;
+  transform: translateY(-2px);
+  margin-right: 8px;
+}
+
+.success__icon path {
+  fill: #84d65a;
+}
+
+.success__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2b641e;
+}
+
+.success__close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.success__close path {
+  fill: #2b641e;
+}
+/* alert button */
+.error {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 320px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background: #fce8db;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px -3px #111;
+}
+
+.error__icon {
+  width: 20px;
+  height: 20px;
+  transform: translateY(-2px);
+  margin-right: 8px;
+}
+
+.error__icon path {
+  fill: #ef665b;
+}
+
+.error__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #71192f;
+}
+
+.error__close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.error__close path {
+  fill: #71192f;
+}
+
+@media screen and (max-width: 738px) {
+  .contact {
+    width: 100%;
+    flex-direction: column;
+    margin-top: -90px;
+  }
+  .TextContainer {
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+  }
+  #write {
+    font-size: 32px;
+  }
+  .formContainer {
+    margin-top: -80px;
+    padding: 20px;
+    width: 100%;
+  }
+  .item {
+    margin: auto;
+    margin-top: -20px;
+  }
+  input {
+    height: 40px;
+  }
+  textarea {
+    height: 150px;
+  }
+  .submit {
+    width: 30%;
+    margin: auto;
+    
+  }
+  .phonesvg {
+    margin: auto;
+    height: 80%;
+    width: 80%;
+  }
+}

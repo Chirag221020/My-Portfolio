@@ -3,6 +3,9 @@ import './Navbar.css'
 function Navbar() {
   return (
     <div className='navbar'>
+      <div className='nav-content'>
+     
+
 <h1 className='text'>Port
 <span className='folio'>folio</span>
 </h1>
@@ -10,6 +13,8 @@ function Navbar() {
     <input type="checkbox"/>
     <span class="slider"></span>
 </label>
+      
+      </div>
     </div>
   
   )
