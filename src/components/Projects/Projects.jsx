@@ -1,12 +1,11 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import "./Projects.css";
-// import cover2 from "./form.png"
 const items = [
   {
     id: 1,
     title: "Responsive Portfolio",
-    img: "public/Portfolio.png",
+    img: "Portfolio.png",
     desc: "Built a dynamic, fully responsive portfolio using React.js CSS, and Framer Motion. Seamlessly integrated interactive animations to enhance user engagement. Designed to display projects and skills in an attractive layout.",
     demo: "#main",
     liveCode: "https://github.com/Chirag221020/Portfolio",
@@ -14,7 +13,7 @@ const items = [
   {
     id: 2,
     title: "Multi-step Form",
-    img: "public/form.png",
+    img: "form.png",
     desc: "Developed a fully responsive multi-step form using Tailwind CSS and React. Implemented smooth transitions and validations to guide users through the form steps. Created to ensure an intuitive and user-friendly experience.",
     demo: "https://multistep-form2220.netlify.app/",
     liveCode: "https://github.com/Chirag221020/Multi-Step-Form",
@@ -22,7 +21,7 @@ const items = [
   {
     id: 3,
     title: "Currency Converter",
-    img: "public/currencyConverter.png",
+    img: "currencyConverter.png",
 
     desc: "Built a fully responsive portfolio using HTML, CSS, and JavaScript. Incorporated responsive design for optimal display across various devices. Integrated an API to fetch real-time conversion rates, providing live data to the project.",
     demo: "https://chirag221020.github.io/currency-converter/",

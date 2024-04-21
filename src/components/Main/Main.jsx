@@ -1,7 +1,6 @@
 import React from "react";
 import "./Main.css";
 import { Typewriter, Cursor } from "react-simple-typewriter";
-import animate from "./Animation - 1713443331137.json";
 import animate2 from "./Animation - 1713468490802.json";
 import Lottie from "lottie-react";
 
