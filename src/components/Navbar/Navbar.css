@@ -12,7 +12,17 @@
   box-shadow: 1px 1px 10px black;
 }
 .navbarLight{
-  background-color: whitesmoke;
+  height: 60px;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  color: aliceblue;
+  display: flex;
+  transition: 0.5s;
+  box-shadow: 1px 1px 10px rgb(57, 57, 57);
 }
 .nav-content {
   width: 100vw;
@@ -23,10 +33,13 @@
 #main-heading {
   color: white;
 }
+#main-headingLight {
+  color: rgb(57, 57, 57);
+}
 
 .text {
   position: absolute;
-  left: 50px;
+  left: 20px;
   cursor: pointer;
 }
 .folio {
@@ -40,8 +53,8 @@
   display: inline-block;
   width: 3.5em;
   height: 2em;
-  margin-right: 100px;
-  right: 0;
+  
+  right: 20px;
 }
 
 /* Hide default HTML checkbox */
@@ -72,13 +85,13 @@
   border-radius: 50%;
   left: 10%;
   bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #fff000;
+  box-shadow: inset 8px -4px 0px 0px #000000;
   background: hsl(250, 66%, 71%);
   transition: 0.5s;
 }
 
 input:checked + .slider {
-  background-color: #000000;
+  background-color: hsl(250, 66%, 71%);
 }
 
 input:checked + .slider:before {

@@ -1,6 +1,35 @@
 import React from "react";
 import "./Work.css";
-function Work() {
+import {motion} from "framer-motion"
+
+
+
+
+const textAnimation = {
+  initial:{ 
+    x: -500,
+    opacity: 0
+  },
+  animate:{
+    x: 0,
+    opacity: 1,
+    transition:{
+      duration:1,
+      staggerChildren:0.1,
+  },
+  },
+  scrollAnimation: {
+    opacity:0,
+    y: 10,
+    transition:{
+      duration:2,
+      repeat: Infinity
+    }
+  }
+};
+
+
+function Work({Light}) {
   return (
     <div className="work">
       <div className="ability" id="top">
@@ -10,14 +39,14 @@ function Work() {
         </h1>
       </div>
       <div className="skills">
-        <div className="webdev">
+        <div className={!Light ? 'lightWebdev' : 'webdev'}>
           <div className="frontend">
             {" "}
             <h1 id="Frontend-Developer">Frontend Developer</h1>{" "}
           </div>
           <div className="lang">
             <div className="type1">
-              <div id="tag1">
+              <motion.div id="tag1" variants = {textAnimation}>
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -34,13 +63,13 @@ function Work() {
                   <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
                   <path d="m9 12 2 2 4-4" />
                 </svg>{" "}
-                <div id="html">
+                <div id="html" >
                   <h3 id="css">HTML</h3>
                   <h4>Advanced</h4>
                 </div>
-              </div>
+              </motion.div>
 
-              <div id="tag1">
+              <motion.div id="tag1"  variants = {textAnimation}>
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,9 +89,9 @@ function Work() {
                 <div id="html">
                   <h3 id="css">CSS/SCSS</h3> <h4>Advanced</h4>{" "}
                 </div>
-              </div>
+              </motion.div>
 
-              <div id="tag1">
+              <motion.div id="tag1"  variants = {textAnimation}>
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,12 +108,12 @@ function Work() {
                   <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
                   <path d="m9 12 2 2 4-4" />
                 </svg>{" "}
-                <div id="html">
+                <div id="html"  variants = {textAnimation}>
                   <h3 id="css">JavaScript</h3> <h4>Advanced</h4>
                 </div>
-              </div>
+              </motion.div>
             </div>
-            <div className="type2">
+            <motion.div className="type2"  variants = {textAnimation}>
               <div id="tag1">
                 {" "}
                 <svg
@@ -108,7 +137,7 @@ function Work() {
                 </div>
               </div>
 
-              <div id="tag1">
+              <motion.div id="tag1"  variants = {textAnimation}>
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +157,7 @@ function Work() {
                 <div id="html">
                   <h3 id="css">Framer Motion</h3> <h4>Intermidiate</h4>{" "}
                 </div>
-              </div>
+              </motion.div>
 
               <div id="tag1">
                 {" "}
@@ -151,10 +180,10 @@ function Work() {
                   <h3 id="css">Git / GitHub</h3> <h4>Advanced</h4>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-        <div className="electrical">
+        <div className={!Light ? 'lightElectrical' : 'electrical'}>
           <div className="frontend">
             {" "}
             <h1 id="Electrical-Engineer">Electrical Engineer</h1>{" "}

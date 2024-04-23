@@ -54,6 +54,18 @@
   flex-direction: column;
   gap: 5px;
 }
+.lightBox1{
+  height: 120px;
+  width: 180px;
+  border-radius: 15px;
+  background-color: rgb(216, 214, 214);
+  color: rgb(57, 57, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
 .exp {
   font-size: 20px;
 }
@@ -93,8 +105,21 @@
   gap: 5px;
   flex-shrink: 50px;
 }
+.lightBox2{
+  height: 120px;
+  width: 180px;
+  border-radius: 15px;
+  background-color: rgb(216, 214, 214);
+  color: rgb(57, 57, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 50px;
+}
 /* .lucide-briefcase{
-    margin-top: 20px;
+  margin-top: 20px;
 } */
 .box3 {
   height: 120px;
@@ -106,6 +131,19 @@
   align-items: center;
   flex-direction: column;
   gap: 5px;
+}
+.lightBox3{
+  height: 120px;
+  width: 180px;
+  border-radius: 15px;
+  background-color: rgb(216, 214, 214);
+  color: rgb(57, 57, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 50px;
 }
 .btn3 {
   display: flex;
@@ -139,6 +177,9 @@
   width: 400px;
   height: 240px;
   text-align: center;
+}
+.lighttxt{
+  color: black;
 }
 
 /* Media queries for smaller screens */

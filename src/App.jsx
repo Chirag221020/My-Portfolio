@@ -9,34 +9,38 @@ import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import BottomBar from "./components/BottomBar/BottomBar";
-import Footer from "./components/Footer/Footer";
-import Loading from "./components/Loading/Loading";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [light, setLight] = useState(true)
+  const themeChange = () => {
+    setLight(!light)
+     document.body.style.backgroundColor =  light ? 'white' : '#11111f';
+     document.body.style.transition = '0.5s'
+    }
+
 
   return (
     <>
-      <BottomBar />
+      <BottomBar Light = {light} />
       <section id="main">
-        <Navbar/>
-        <Main />
+        <Navbar Light = {light} setTheme = {themeChange}/>
+        <Main Light = {light} />
       </section>
 
       <section id="about">
-        <About />
+        <About Light = {light} />
       </section>
 
       <section id="work">
-        <Work />
+        <Work Light = {light}/>
       </section>
       {/* Projects */}
       <div id="projects">
-        <Projects />
+        <Projects Light = {light}/>
       </div>
       <section id="contact">
-        <Contact />
-        <Footer/>
+        <Contact  Light = {light} />
       </section>
     </>
   );

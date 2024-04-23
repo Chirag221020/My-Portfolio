@@ -37,11 +37,19 @@
 .ml {
   font-size: 20px;
 }
+.lightml{
+  font-size: 20px;
+  color: rgb(57, 57, 57);
+}
 #effect {
   font-size: 50px;
 }
 #anime {
   color: wheat;
+  font-size: 20px;
+}
+#lightAnime{
+  color: rgb(146, 103, 23);
   font-size: 20px;
 }
 .btn {
@@ -64,11 +72,24 @@
   cursor: pointer;
   transition: 0.4s;
 }
+#lightBtn1 {
+  height: 60px;
+  width: 180px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: hsl(250, 66%, 71%);
+  font-size: 18px;
+  font-weight: bolder;
+  border: 2px solid;
+  cursor: pointer;
+  transition: 0.4s;
+}
 #btn4{
 color: hsl(250, 66%, 71%);
   text-decoration: none;
   
 }
+
 #btn4:hover{
     background-color: hsl(250, 66%, 71%);
   color: black;
@@ -77,6 +98,11 @@ color: hsl(250, 66%, 71%);
 #btn1:hover{
   background-color: hsl(250, 66%, 71%);
   color: black;
+}
+#lightBtn1:hover{
+  background-color: hsl(250, 66%, 71%);
+  color: black;
+  border-color: hsl(250, 66%, 71%);
 }
 #btn2 {
   height: 60px;
@@ -113,12 +139,29 @@ color: hsl(250, 66%, 71%);
   border: none;
   transition: 0.4s;
 }
+.lightLinkediin{
+  background-color: rgb(237, 235, 235);
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  box-shadow: 0px 2px 4px;
+  cursor: pointer;
+  border: none;
+  transition: 0.4s;
+}
+#lightlucide-linkedin{
+  stroke:#000000;
+}
 .linkedin:hover {
   background-color: hsl(250, 66%, 71%);
 }
-.lucide:hover {
-  stroke: white;
+.lightLinkediin:hover {
+  background-color: hsl(250, 66%, 71%);
 }
+
 #btn-2 {
   color: black;
   /* text-decoration-color: white; */
@@ -136,7 +179,22 @@ color: hsl(250, 66%, 71%);
   border: none;
   transition: 0.4s;
 }
+.lightGit {
+  background-color: rgb(237, 235, 235);
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  box-shadow: 0px 2px 4px;
+  border: none;
+  transition: 0.4s;
+}
 .git:hover {
+  background-color: hsl(250, 66%, 71%);
+}
+.lightGit:hover {
   background-color: hsl(250, 66%, 71%);
 }
 
@@ -152,7 +210,22 @@ color: hsl(250, 66%, 71%);
   box-shadow: 0px 2px 4px;
   transition: 0.4s;
 }
+.lightYoutube{
+  background-color: rgb(237, 235, 235);
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  border: none;
+  box-shadow: 0px 2px 4px;
+  transition: 0.4s;
+}
 .youtube:hover {
+  background-color: hsl(250, 66%, 71%);
+}
+.lightYoutube:hover {
   background-color: hsl(250, 66%, 71%);
 }
 .line {
@@ -194,13 +267,13 @@ color: hsl(250, 66%, 71%);
 
   .icons {
     margin-left: 0;
-    bottom: 25%;
-    padding-left: 40px;
+    bottom: 20%;
+    left: 25px;
   }
   .scroll {
     right: 0;
-    bottom: 25%;
-    padding-right: 40px;
+    bottom: 20%;
+    right: 25px;
   }
   .character {
     padding-right: 40px;

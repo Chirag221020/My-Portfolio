@@ -18,7 +18,7 @@ const variants = {
   },
 };
 
-function Contact() {
+function Contact({Light}) {
   const ref = useRef();
   const formRef = useRef();
   const [error, setError] = useState(false);
@@ -52,8 +52,8 @@ function Contact() {
       initial="initial"
       whileInView="animate"
     >
-      <motion.div className="TextContainer" variants={variants}>
-        <motion.h1 id="write" variants={variants}>
+      <motion.div className={!Light ? 'lightTextContainer' : 'TextContainer'}variants={variants}>
+        <motion.h1 id={!Light ? 'lightWrite' : 'write'} variants={variants}>
           {" "}
           Lets Work Together
         </motion.h1>
@@ -110,9 +110,11 @@ function Contact() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" placeholder="Name" name="name" />
-          <input type="email" placeholder="Email" name="email" />
-          <textarea rows={8} placeholder="Message" name="message"></textarea>
+          <input type="text" placeholder="Name" name="name" className={!Light ? 'lightInput-text' : 'input-text'}/>
+          <input type="email" placeholder="Email" name="email" 
+           className={!Light ? 'lightInput-text' : 'input-text'}/>
+          <textarea rows={8} placeholder="Message" name="message"
+           className={!Light ? 'lightInput-text' : 'input-text'}></textarea>
           <button className="submit">Submit</button>
 
           {error && (

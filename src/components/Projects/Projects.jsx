@@ -29,7 +29,7 @@ const items = [
   },
 ];
 
-const Single = ({ item }) => {
+const Single = ({ item}) => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -45,7 +45,7 @@ const Single = ({ item }) => {
             <img src={item.img} alt="" className="project-img" />
           </motion.div>
           <motion.div id="text-container" style={{ y }}>
-            <h2 className="item-title">{item.title}</h2>
+            <h2 className='item-title'>{item.title}</h2>
             <p className="item-desc">{item.desc}</p>
             <div className="live-btn">
               <button className="demo">
@@ -82,7 +82,7 @@ function Projects() {
     <div className="projects" ref={ref}>
       <div className="progress">
         <h1>Featured Works</h1>
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+        <motion.div style={{ scaleX }} className= 'progressBar'></motion.div>
       </div>
 
       {items.map((item) => (

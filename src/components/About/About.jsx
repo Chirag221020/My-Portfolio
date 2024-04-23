@@ -3,7 +3,26 @@ import "./About.css";
 import Lottie from "lottie-react";
 import char from "./Op2mFCXf4d.json";
 import char2 from "./aboutme.json";
-function About() {
+import { motion } from "framer-motion";
+
+const variants = {
+  initial: {
+    y: 500,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+
+
+function About({Light}) {
   return (
     <div className="about">
       <div className="intro">
@@ -16,9 +35,11 @@ function About() {
       </div> */}
         <Lottie animationData={char2} loop={true} className="img" />
 
-        <div className="contain2">
+        <motion.div className="contain2"        variants={variants}
+      initial="initial"
+      whileInView="animate">
           <div className="boxes">
-            <div className="box1">
+            <div className={!Light ? 'lightBox1' : 'box1'} >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -37,7 +58,7 @@ function About() {
               <h1 className="exp">Experience</h1>
               <h2 className="fresher">Fresher</h2>
             </div>
-            <div className="box2">
+            <motion.div className={!Light ? 'lightBox2' : 'box2'}   variants={variants}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -56,8 +77,8 @@ function About() {
               <h1 className="complete">Completed</h1>
 
               <h2 className="fresher">10 + Projects</h2>
-            </div>
-            <div className="box3">
+            </motion.div>
+            <motion.div className={!Light ? 'lightBox3' : 'box3'}  variants={variants}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -77,21 +98,21 @@ function About() {
               <h1 className="support">Support</h1>
 
               <h2 className="fresher">24/7</h2>
-            </div>
+            </motion.div>
           </div>
-          <div className="txt">
+          <motion.div className={!Light ? 'lighttxt' : 'txt'} variants={variants}>
             Frontend Developer. I create web pages with UI / UX user interfaces,
-          </div>
+          </motion.div>
           <div className="contact-me">
             {" "}
-            <button className="btn3">
+            <motion.button className="btn3" variants={variants}>
               <a href="#contact" id="btn3">
                 {" "}
                 Contact Me
               </a>
-            </button>
+            </motion.button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
