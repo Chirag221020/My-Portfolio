@@ -21,6 +21,9 @@
   position: fixed;
   bottom: 20px;
   z-index: 5;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 .lightBottomBar{
   background-color: #6868b530;

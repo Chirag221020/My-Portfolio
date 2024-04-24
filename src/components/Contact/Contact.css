@@ -180,7 +180,17 @@ form {
     margin-top: 50px;
     
   }
+  .lightTextContainer {
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    
+  }
   #write {
+    font-size: 32px;
+  }
+  #lightWrite {
     font-size: 32px;
   }
   .formContainer {

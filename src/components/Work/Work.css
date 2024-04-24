@@ -138,6 +138,12 @@ h4 {
     background-color: #221f2e;
     gap: 25px;
   }
+  .lightWebdev{
+    width: 85vw;
+    height: 300px;
+    border-radius: 15px;
+    gap: 25px;
+  }
   #css {
     font-size: 14px;
   }
@@ -146,6 +152,12 @@ h4 {
     height: 300px;
     border-radius: 15px;
     background-color: #221f2e;
+    gap: 25px;
+  }
+  .lightElectrical{
+    width: 85vw;
+    height: 300px;
+    border-radius: 15px;
     gap: 25px;
   }
 }

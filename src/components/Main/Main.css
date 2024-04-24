@@ -28,6 +28,7 @@
 }
 .character {
   height: 500px;
+  z-index: -1;
 }
 .name {
   color: hsl(250, 66%, 71%);
@@ -124,7 +125,7 @@ color: hsl(250, 66%, 71%);
   gap: 10px;
   margin-left: 25%;
   margin-top: 20%;
-  z-index: 2;
+  z-index: -1;
 }
 .linkedin {
   background-color: #262135;
@@ -245,7 +246,7 @@ color: hsl(250, 66%, 71%);
   font-size: 12px;
   letter-spacing: 2px;
   cursor: pointer;
-  z-index: 2;
+  z-index: -1;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */

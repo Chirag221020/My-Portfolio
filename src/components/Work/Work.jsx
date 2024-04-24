@@ -4,28 +4,19 @@ import {motion} from "framer-motion"
 
 
 
-
-const textAnimation = {
-  initial:{ 
-    x: -500,
-    opacity: 0
+const variants = {
+  initial: {
+   y:300,
+    opacity: 0,
   },
-  animate:{
-    x: 0,
+  animate: {
+    y: 0,
     opacity: 1,
-    transition:{
-      duration:1,
-      staggerChildren:0.1,
+    transition: {
+      duration: 0.8,
+      staggerChildren: 0.1,
+    },
   },
-  },
-  scrollAnimation: {
-    opacity:0,
-    y: 10,
-    transition:{
-      duration:2,
-      repeat: Infinity
-    }
-  }
 };
 
 
@@ -39,14 +30,15 @@ function Work({Light}) {
         </h1>
       </div>
       <div className="skills">
-        <div className={!Light ? 'lightWebdev' : 'webdev'}>
+        <motion.div className={!Light ? 'lightWebdev' : 'webdev'} variants = {variants}  initial="initial"
+      whileInView="animate">
           <div className="frontend">
             {" "}
             <h1 id="Frontend-Developer">Frontend Developer</h1>{" "}
           </div>
           <div className="lang">
             <div className="type1">
-              <motion.div id="tag1" variants = {textAnimation}>
+              <div id="tag1" >
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,9 +59,9 @@ function Work({Light}) {
                   <h3 id="css">HTML</h3>
                   <h4>Advanced</h4>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div id="tag1"  variants = {textAnimation}>
+              <div id="tag1" >
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,9 +81,9 @@ function Work({Light}) {
                 <div id="html">
                   <h3 id="css">CSS/SCSS</h3> <h4>Advanced</h4>{" "}
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div id="tag1"  variants = {textAnimation}>
+              <div id="tag1">
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -108,12 +100,12 @@ function Work({Light}) {
                   <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
                   <path d="m9 12 2 2 4-4" />
                 </svg>{" "}
-                <div id="html"  variants = {textAnimation}>
+                <div id="html" >
                   <h3 id="css">JavaScript</h3> <h4>Advanced</h4>
                 </div>
-              </motion.div>
+              </div>
             </div>
-            <motion.div className="type2"  variants = {textAnimation}>
+            <div className="type2">
               <div id="tag1">
                 {" "}
                 <svg
@@ -137,7 +129,7 @@ function Work({Light}) {
                 </div>
               </div>
 
-              <motion.div id="tag1"  variants = {textAnimation}>
+              <div id="tag1">
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +149,7 @@ function Work({Light}) {
                 <div id="html">
                   <h3 id="css">Framer Motion</h3> <h4>Intermidiate</h4>{" "}
                 </div>
-              </motion.div>
+              </div>
 
               <div id="tag1">
                 {" "}
@@ -180,10 +172,11 @@ function Work({Light}) {
                   <h3 id="css">Git / GitHub</h3> <h4>Advanced</h4>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
-        </div>
-        <div className={!Light ? 'lightElectrical' : 'electrical'}>
+        </motion.div>
+        <motion.div className={!Light ? 'lightElectrical' : 'electrical'} variants = {variants}  initial="initial"
+      whileInView="animate">
           <div className="frontend">
             {" "}
             <h1 id="Electrical-Engineer">Electrical Engineer</h1>{" "}
@@ -326,7 +319,7 @@ function Work({Light}) {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

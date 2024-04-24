@@ -29,6 +29,8 @@ const items = [
   },
 ];
 
+
+
 const Single = ({ item}) => {
   const ref = useRef();
 
@@ -68,7 +70,7 @@ const Single = ({ item}) => {
   );
 };
 
-function Projects() {
+function Projects({Light}) {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -82,7 +84,7 @@ function Projects() {
     <div className="projects" ref={ref}>
       <div className="progress">
         <h1>Featured Works</h1>
-        <motion.div style={{ scaleX }} className= 'progressBar'></motion.div>
+        <motion.div style={{ scaleX }} className={!Light ? 'lightProgressBar' : 'progressBar'}></motion.div>
       </div>
 
       {items.map((item) => (

@@ -8,7 +8,7 @@
   top: 0;
   color: aliceblue;
   display: flex;
-  z-index: 1;
+  z-index:999 ;
   box-shadow: 1px 1px 10px black;
 }
 .navbarLight{

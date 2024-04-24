@@ -1,5 +1,14 @@
 import React from "react";
 import "./Navbar.css";
+
+const vibrate = () => {
+
+  if(navigator) {
+    navigator.vibrate([1000])
+
+  }
+}
+
 function Navbar({Light, setTheme}) {
 
   return (
@@ -12,7 +21,7 @@ function Navbar({Light, setTheme}) {
           </a>
         </h1>
 
-        <label class="switch">
+        <label class="switch" onClick={vibrate}>
     <input type="checkbox" checked = {!Light} onChange={setTheme}/>
     <span class="slider"></span>
 </label>
