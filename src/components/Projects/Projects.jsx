@@ -29,9 +29,7 @@ const items = [
   },
 ];
 
-
-
-const Single = ({ item}) => {
+const Single = ({ item }) => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -39,29 +37,24 @@ const Single = ({ item}) => {
     // offset:["start start", "end start"]
   });
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  const newLocal = "container";
   return (
     <section>
-      <div className="container">
-        <div className="wrapper">
+      <div className={newLocal}>
+        <div className="wrapper" style={{ zIndex: 9999 }}>
           <motion.div className="img-container" ref={ref}>
             <img src={item.img} alt="" className="project-img" />
           </motion.div>
           <motion.div id="text-container" style={{ y }}>
-            <h2 className='item-title'>{item.title}</h2>
+            <h2 className="item-title">{item.title}</h2>
             <p className="item-desc">{item.desc}</p>
             <div className="live-btn">
-              <button className="demo">
-                <a href={item.demo} target="blank" className="a-demo">
-                  {" "}
-                  See Demo
-                </a>
-              </button>
-              <button className="demo">
-                <a href={item.liveCode} target="blank" className="a-code">
-                  {" "}
-                  Live Code
-                </a>
-              </button>
+              <a href={item.demo} target="blank" className="a-demo">
+                <button className="demo"> See Demo</button>
+              </a>
+              <a href={item.liveCode} target="blank" className="a-code">
+                <button className="demo"> Live Code</button>
+              </a>
             </div>
           </motion.div>
         </div>
@@ -70,7 +63,7 @@ const Single = ({ item}) => {
   );
 };
 
-function Projects({Light}) {
+function Projects({ Light }) {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -84,7 +77,10 @@ function Projects({Light}) {
     <div className="projects" ref={ref}>
       <div className="progress">
         <h1>Featured Works</h1>
-        <motion.div style={{ scaleX }} className={!Light ? 'lightProgressBar' : 'progressBar'}></motion.div>
+        <motion.div
+          style={{ scaleX }}
+          className={!Light ? "lightProgressBar" : "progressBar"}
+        ></motion.div>
       </div>
 
       {items.map((item) => (
