@@ -129,35 +129,35 @@ h4 {
     font-size: 15px;
   }
   .work {
-    gap: 30px;
+    gap: 10px;
   }
   .webdev {
     width: 85vw;
-    height: 300px;
+    height: 260px;
     border-radius: 15px;
     background-color: #221f2e;
-    gap: 25px;
+    gap: 20px;
   }
   .lightWebdev{
     width: 85vw;
-    height: 300px;
+    height: 260px;
     border-radius: 15px;
-    gap: 25px;
+    gap: 20px;
   }
   #css {
-    font-size: 14px;
+    font-size: 12px;
   }
   .electrical {
     width: 85vw;
-    height: 300px;
+    height: 260px;
     border-radius: 15px;
     background-color: #221f2e;
-    gap: 25px;
+    gap: 20px;
   }
   .lightElectrical{
     width: 85vw;
-    height: 300px;
+    height: 260px;
     border-radius: 15px;
-    gap: 25px;
+    gap: 20px;
   }
 }

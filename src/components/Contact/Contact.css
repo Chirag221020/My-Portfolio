@@ -170,7 +170,7 @@ form {
   .contact {
     width: 100%;
     flex-direction: column;
-    margin-top: -80px;
+    margin-top: -60px;
     gap: 20px;
   }
   .TextContainer {
@@ -188,10 +188,10 @@ form {
     
   }
   #write {
-    font-size: 32px;
+    font-size: 25px;
   }
   #lightWrite {
-    font-size: 32px;
+    font-size: 25px;
   }
   .formContainer {
     margin-top: -80px;
@@ -217,4 +217,35 @@ form {
     height: 80%;
     width: 80%;
   }
+  textarea{
+    height: 100px;
+}
+}
+
+
+@media screen and (max-width: 468px) {
+
+  .contact {
+    width: 100%;
+    flex-direction: column;
+    margin-top: -60px;
+    gap: 20px;
+  }
+  #write {
+    font-size: 25px;
+    
+  }
+  #lightWrite {
+    font-size: 25px;
+  }
+  .TextContainer{
+        font-size: 14px;
+        gap: 5px;
+  }
+
+  textarea{
+            height: 100px;
+  }
+
+  
 }

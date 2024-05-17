@@ -53,7 +53,7 @@ const Single = ({ item }) => {
                 <button className="demo"> See Demo</button>
               </a>
               <a href={item.liveCode} target="blank" className="a-code">
-                <button className="demo"> Live Code</button>
+                <button className="demo" id="demo1"> Live Code</button>
               </a>
             </div>
           </motion.div>
