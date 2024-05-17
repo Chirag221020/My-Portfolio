@@ -37,11 +37,11 @@ const Single = ({ item }) => {
     // offset:["start start", "end start"]
   });
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-  const newLocal = "container";
+  
   return (
     <section>
-      <div className={newLocal}>
-        <div className="wrapper" style={{ zIndex: 9999 }}>
+      <div className="container">
+        <div className="wrapper" >
           <motion.div className="img-container" ref={ref}>
             <img src={item.img} alt="" className="project-img" />
           </motion.div>

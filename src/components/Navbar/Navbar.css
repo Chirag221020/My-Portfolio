@@ -8,7 +8,8 @@
   top: 0;
   color: aliceblue;
   display: flex;
-  z-index:999 ;
+  z-index: 999 ;
+ 
   box-shadow: 1px 1px 10px black;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -25,6 +26,7 @@
   color: aliceblue;
   display: flex;
   transition: 0.5s;
+  z-index: 999 ;
   box-shadow: 1px 1px 10px rgb(57, 57, 57);
 }
 .nav-content {
