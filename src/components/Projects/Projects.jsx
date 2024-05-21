@@ -8,7 +8,7 @@ const items = [
     img: "Portfolio.png",
     desc: "Built a dynamic, fully responsive portfolio using React.js CSS, and Framer Motion. Seamlessly integrated interactive animations to enhance user engagement. Designed to display projects and skills in an attractive layout.",
     demo: "#main",
-    liveCode: "https://github.com/Chirag221020/Portfolio",
+    liveCode: "https://github.com/Chirag221020/My-Portfolio",
   },
   {
     id: 2,
