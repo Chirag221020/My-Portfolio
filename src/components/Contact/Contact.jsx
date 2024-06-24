@@ -64,7 +64,7 @@ function Contact({Light}) {
 
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span id="info">Jaipur, rajasthan</span>
+          <span id="info">Jaipur, Rajasthan</span>
         </motion.div>
 
         <motion.div className="item" variants={variants}>
