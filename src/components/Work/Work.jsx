@@ -147,7 +147,7 @@ function Work({Light}) {
                   <path d="m9 12 2 2 4-4" />
                 </svg>
                 <div id="html">
-                  <h3 id="css">Framer Motion</h3> <h4>Intermidiate</h4>{" "}
+                  <h3 id="css">Tailwind CSS</h3> <h4>Intermidiate</h4>{" "}
                 </div>
               </div>
 
