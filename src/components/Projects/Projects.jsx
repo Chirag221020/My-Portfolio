@@ -4,6 +4,14 @@ import "./Projects.css";
 const items = [
   {
     id: 1,
+    title: "Responsive E-commerce Website for Chips Purchase",
+    img: "src/components/Projects/images/E-commerce.png",
+    desc: "Developed a fully responsive e-commerce website for purchasing chips using HTML, CSS, and JavaScript. The platform features a user-friendly interface, seamless navigation, and a modern design. It ensures optimal performance and accessibility across all devices.",
+    demo: "https://e-commerce-chips-website.vercel.app/",
+    liveCode: "https://github.com/Chirag221020/E-Commerce-Chips-Website",
+  },
+  {
+    id: 2,
     title: "Responsive Portfolio",
     img: "Portfolio.png",
     desc: "Built a dynamic, fully responsive portfolio using React.js CSS, and Framer Motion. Seamlessly integrated interactive animations to enhance user engagement. Designed to display projects and skills in an attractive layout.",
@@ -11,7 +19,7 @@ const items = [
     liveCode: "https://github.com/Chirag221020/My-Portfolio",
   },
   {
-    id: 2,
+    id: 3,
     title: "Multi-step Form",
     img: "form.png",
     desc: "Developed a fully responsive multi-step form using Tailwind CSS and React. Implemented smooth transitions and validations to guide users through the form steps. Created to ensure an intuitive and user-friendly experience.",
@@ -19,7 +27,7 @@ const items = [
     liveCode: "https://github.com/Chirag221020/Multi-Step-Form",
   },
   {
-    id: 3,
+    id: 4,
     title: "Currency Converter",
     img: "currencyConverter.png",
 

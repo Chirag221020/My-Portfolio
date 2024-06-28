@@ -9,13 +9,13 @@
   text-align: center;
   color: #9584e6;
   font-size: 36px;
-  z-index:10;
+  z-index: 10;
 }
 .progressBar {
   height: 10px;
   background-color: antiquewhite;
 }
-.lightProgressBar{
+.lightProgressBar {
   height: 10px;
   background-color: rgb(174, 174, 174);
 }
@@ -30,7 +30,7 @@
 .project-img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit:fill;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 4px rgba(128, 128, 128, 0.267);
 }
@@ -56,11 +56,11 @@
   justify-content: center;
 }
 .item-title {
-  font-size: 65px;
+  font-size: 50px;
   color: rgb(178, 172, 106);
   /* width: 40vw; */
 }
-.lightItem-title{
+.lightItem-title {
   font-size: 65px;
   color: rgb(146, 103, 23);
   /* width: 40vw; */
@@ -126,7 +126,6 @@
     width: 350px;
     margin-left: 10px;
     margin-right: 10px;
-   
   }
   .container {
     padding-top: 200px;
@@ -138,11 +137,8 @@
     width: 300px;
     gap: 20px;
   }
-  .demo{
-    
+  .demo {
     width: 150px;
-  
-    
   }
 }
 
@@ -158,7 +154,6 @@
     gap: 10px;
   }
   .img-container {
-
     width: 70%;
     max-height: 200px;
   }
@@ -173,14 +168,13 @@
   }
   .item-title {
     font-size: 25px;
-    width: 100vw;
+    width: 90vw;
   }
   .item-desc {
     font-size: 14px;
     width: 300px;
     margin-left: 10px;
     margin-right: 10px;
-   
   }
   .container {
     padding-top: 200px;
@@ -188,15 +182,10 @@
     align-items: center;
     justify-content: center;
   }
-  .live-btn{
+  .live-btn {
     gap: 20px;
   }
-  .demo{
-    
+  .demo {
     width: 150px;
-
-    
   }
-
-
 }
