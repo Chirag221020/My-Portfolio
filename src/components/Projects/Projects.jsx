@@ -5,7 +5,7 @@ const items = [
   {
     id: 1,
     title: "Responsive E-commerce Website for Chips Purchase",
-    img: "src/components/Projects/images/E-commerce.png",
+    img: "src/components/Projects/images/Ecommerce.png",
     desc: "Developed a fully responsive e-commerce website for purchasing chips using HTML, CSS, and JavaScript. The platform features a user-friendly interface, seamless navigation, and a modern design. It ensures optimal performance and accessibility across all devices.",
     demo: "https://e-commerce-chips-website.vercel.app/",
     liveCode: "https://github.com/Chirag221020/E-Commerce-Chips-Website",
