@@ -242,15 +242,15 @@ form {
     height: 100px;
   }
   .success {
-    position: absolute;
-    top: -26rem;
+    position: relative;
+    top: -44rem;
     left: 2rem;
     z-index: 999;
     transition: 0.2s;
   }
   .error {
-    position: absolute;
-    top: -26rem;
+    position: relative;
+    top: -44rem;
     left: 2rem;
     z-index: 999;
     transition: 0.2s;
