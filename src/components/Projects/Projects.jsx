@@ -5,7 +5,7 @@ const items = [
   {
     id: 1,
     title: "Responsive E-commerce Website for Chips Purchase",
-    img: "src/components/Projects/images/Ecommerce.png",
+    img: "Ecommerce.png",
     desc: "Developed a fully responsive e-commerce website for purchasing chips using HTML, CSS, and JavaScript. The platform features a user-friendly interface, seamless navigation, and a modern design. It ensures optimal performance and accessibility across all devices.",
     demo: "https://e-commerce-chips-website.vercel.app/",
     liveCode: "https://github.com/Chirag221020/E-Commerce-Chips-Website",
@@ -29,7 +29,7 @@ const items = [
   {
     id: 4,
     title: "Currency Converter",
-    img: "currencyConverter.png",
+    img: "currencyConverter_copy.png",
 
     desc: "Built a fully responsive portfolio using HTML, CSS, and JavaScript. Incorporated responsive design for optimal display across various devices. Integrated an API to fetch real-time conversion rates, providing live data to the project.",
     demo: "https://chirag221020.github.io/currency-converter/",
