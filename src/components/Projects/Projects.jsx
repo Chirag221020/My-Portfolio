@@ -29,7 +29,7 @@ const items = [
   {
     id: 4,
     title: "Currency Converter",
-    img: "currencyConverter_copy.png",
+    img: "currencyConverter.png",
 
     desc: "Built a fully responsive portfolio using HTML, CSS, and JavaScript. Incorporated responsive design for optimal display across various devices. Integrated an API to fetch real-time conversion rates, providing live data to the project.",
     demo: "https://chirag221020.github.io/currency-converter/",
