@@ -23,6 +23,13 @@ function Contact({Light}) {
   const formRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+  const closeSuccess = ()=>{
+              setSuccess(false),
+              setError(false)
+  }
+  
+  const isFormsubmitted = localStorage.getItem("isSubmitted")
+  console.log(isFormsubmitted)
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -34,6 +41,7 @@ function Contact({Light}) {
       .then(
         (result) => {
           setSuccess(true);
+          localStorage.setItem("isSubmitted", true)
           console.log("SUCCESS!");
         },
         (error) => {
@@ -110,12 +118,12 @@ function Contact({Light}) {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" placeholder="Name" name="name" className={!Light ? 'lightInput-text' : 'input-text'}/>
+          <input type="text" placeholder="Name" name="name" className={!Light ? 'lightInput-text' : 'input-text'} required/>
           <input type="email" placeholder="Email" name="email" 
-           className={!Light ? 'lightInput-text' : 'input-text'}/>
+           className={!Light ? 'lightInput-text' : 'input-text'} required/>
           <textarea rows={8} placeholder="Message" name="message"
-           className={!Light ? 'lightInput-text' : 'input-text'}></textarea>
-          <button className="submit">Submit</button>
+           className={!Light ? 'lightInput-text' : 'input-text'} required></textarea>
+          <button className="submit" disabled = {isFormsubmitted} >Submit</button>
 
           {error && (
             <div class="error">
@@ -136,7 +144,7 @@ function Contact({Light}) {
               <div class="error__title">
                 Something Went Wrong! Please try again later
               </div>
-              <div class="error__close">
+              <div class="error__close" onClick={closeSuccess}>
                 <svg
                   height="20"
                   viewBox="0 0 20 20"
@@ -151,6 +159,8 @@ function Contact({Light}) {
               </div>
             </div>
           )}
+
+
 
           {success && (
             <div class="success">
@@ -173,7 +183,7 @@ function Contact({Light}) {
 
               <div class="success__title">Message Send Successfully</div>
 
-              <div class="success__close" onClick={history.back}>
+              <div class="success__close" onClick={closeSuccess}>
                 <svg
                   height="20"
                   viewBox="0 0 20 20"
