@@ -18,18 +18,17 @@ const variants = {
   },
 };
 
-function Contact({Light}) {
+function Contact({ Light }) {
   const ref = useRef();
   const formRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
-  const closeSuccess = ()=>{
-              setSuccess(false),
-              setError(false)
-  }
-  
-  const isFormsubmitted = localStorage.getItem("isSubmitted")
-  console.log(isFormsubmitted)
+  const closeSuccess = () => {
+    setSuccess(false), setError(false);
+  };
+
+  const isFormsubmitted = localStorage.getItem("isSubmitted");
+  console.log(isFormsubmitted);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -41,7 +40,7 @@ function Contact({Light}) {
       .then(
         (result) => {
           setSuccess(true);
-          localStorage.setItem("isSubmitted", true)
+          localStorage.setItem("isSubmitted", true);
           console.log("SUCCESS!");
         },
         (error) => {
@@ -60,8 +59,11 @@ function Contact({Light}) {
       initial="initial"
       whileInView="animate"
     >
-      <motion.div className={!Light ? 'lightTextContainer' : 'TextContainer'}variants={variants}>
-        <motion.h1 id={!Light ? 'lightWrite' : 'write'} variants={variants}>
+      <motion.div
+        className={!Light ? "lightTextContainer" : "TextContainer"}
+        variants={variants}
+      >
+        <motion.h1 id={!Light ? "lightWrite" : "write"} variants={variants}>
           {" "}
           Lets Work Together
         </motion.h1>
@@ -118,12 +120,30 @@ function Contact({Light}) {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" placeholder="Name" name="name" className={!Light ? 'lightInput-text' : 'input-text'} required/>
-          <input type="email" placeholder="Email" name="email" 
-           className={!Light ? 'lightInput-text' : 'input-text'} required/>
-          <textarea rows={8} placeholder="Message" name="message"
-           className={!Light ? 'lightInput-text' : 'input-text'} required></textarea>
-          <button className="submit" disabled = {isFormsubmitted} >Submit</button>
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            className={!Light ? "lightInput-text" : "input-text"}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            className={!Light ? "lightInput-text" : "input-text"}
+            required
+          />
+          <textarea
+            rows={8}
+            placeholder="Message"
+            name="message"
+            className={!Light ? "lightInput-text" : "input-text"}
+            required
+          ></textarea>
+          <button className="submit" disabled={isFormsubmitted}>
+            Submit
+          </button>
 
           {error && (
             <div class="error">
@@ -159,8 +179,6 @@ function Contact({Light}) {
               </div>
             </div>
           )}
-
-
 
           {success && (
             <div class="success">

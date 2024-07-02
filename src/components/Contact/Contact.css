@@ -12,7 +12,7 @@
   flex-direction: column;
   gap: 40px;
 }
-.lightTextContainer{
+.lightTextContainer {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -45,14 +45,14 @@ form {
   flex-direction: column;
   gap: 20px;
 }
-.input-text{
+.input-text {
   padding: 20px;
   background-color: transparent;
   border: 1px solid white;
   color: rgb(255, 255, 255);
   border-radius: 5px;
 }
-.lightInput-text{
+.lightInput-text {
   padding: 20px;
   background-color: transparent;
   border: 2px solid #9584e6;
@@ -178,14 +178,12 @@ form {
     align-items: center;
     text-align: center;
     margin-top: 50px;
-    
   }
   .lightTextContainer {
     gap: 5px;
     align-items: center;
     text-align: center;
     margin-top: 50px;
-    
   }
   #write {
     font-size: 25px;
@@ -197,7 +195,7 @@ form {
     margin-top: -80px;
     padding: 20px;
     width: 100%;
-}
+  }
   .item {
     margin: auto;
     margin-top: -20px;
@@ -217,14 +215,12 @@ form {
     height: 80%;
     width: 80%;
   }
-  textarea{
+  textarea {
     height: 100px;
+  }
 }
-}
-
 
 @media screen and (max-width: 468px) {
-
   .contact {
     width: 100%;
     flex-direction: column;
@@ -233,19 +229,30 @@ form {
   }
   #write {
     font-size: 25px;
-    
   }
   #lightWrite {
     font-size: 25px;
   }
-  .TextContainer{
-        font-size: 14px;
-        gap: 5px;
+  .TextContainer {
+    font-size: 14px;
+    gap: 5px;
   }
 
-  textarea{
-            height: 100px;
+  textarea {
+    height: 100px;
   }
-
-  
+  .success {
+    position: absolute;
+    top: -26rem;
+    left: 2rem;
+    z-index: 999;
+    transition: 0.2s;
+  }
+  .error {
+    position: absolute;
+    top: -26rem;
+    left: 2rem;
+    z-index: 999;
+    transition: 0.2s;
+  }
 }
