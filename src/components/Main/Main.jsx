@@ -60,13 +60,13 @@ function Main({Light}) {
       </motion.h1>
       <motion.div className="btn" variants={textAnimation}>
         <a
-          href="https://drive.google.com/file/d/1-SAmvcQPRUsGnYPSh6no6iCwpboA3VSj/view?usp=drive_link"
+          href="https://drive.google.com/file/d/18WJhUNpRBb09JldjyHvFiT_bkZPclQDl/view?usp=drivesdk"
           target="blank"
         >
           <button id={!Light ? 'lightBtn1' : 'btn1'}>Download CV</button>{" "}
         </a>
         <button id="btn2">
-          <a href="https://drive.google.com/file/d/18WJhUNpRBb09JldjyHvFiT_bkZPclQDl/view?usp=drivesdk" id="btn-2">
+          <a href="#About" id="btn-2">
             About
           </a>
         </button>
