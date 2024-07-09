@@ -66,7 +66,7 @@ function Main({Light}) {
           <button id={!Light ? 'lightBtn1' : 'btn1'}>Download CV</button>{" "}
         </a>
         <button id="btn2">
-          <a href="#about" id="btn-2">
+          <a href="https://drive.google.com/file/d/18WJhUNpRBb09JldjyHvFiT_bkZPclQDl/view?usp=drivesdk" id="btn-2">
             About
           </a>
         </button>
