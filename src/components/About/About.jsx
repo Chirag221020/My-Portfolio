@@ -79,25 +79,11 @@ function About({Light}) {
               <h2 className="fresher"  id={!Light ? 'lightCompl' : 'complete'}>10 + Projects</h2>
             </motion.div>
             <motion.div className={!Light ? 'lightBox3' : 'box3'}  variants={variants}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#9584e6"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-headset"
-              >
-                <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
-                <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9584e6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
 
-              <h1 className="support"  id={!Light ? 'lightComplete' : 'complete'}>Support</h1>
+              <h1 className="support"  id={!Light ? 'lightComplete' : 'complete'}>Education</h1>
 
-              <h2 className="fresher"  id={!Light ? 'lightCompl' : 'complete'}>24/7</h2>
+              <h2 className="fresher"  id={!Light ? 'lightCompl' : 'complete'}>B.Tech</h2>
             </motion.div>
           </div>
           <motion.div className={!Light ? 'lighttxt' : 'txt'} variants={variants}>
