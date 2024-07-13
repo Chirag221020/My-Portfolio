@@ -66,8 +66,8 @@ function Main({Light}) {
           <button id={!Light ? 'lightBtn1' : 'btn1'}>Download CV</button>{" "}
         </a>
         <button id="btn2">
-          <a href="#About" id="btn-2">
-            About
+          <a href="#contact" id="btn-2">
+            Contact
           </a>
         </button>
       </motion.div>

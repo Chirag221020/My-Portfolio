@@ -92,9 +92,9 @@ function About({Light}) {
           <div className="contact-me">
             {" "}
             <motion.button className="btn3" variants={variants}>
-              <a href="#contact" id="btn3">
+              <a href="#projects" id="btn3">
                 {" "}
-                Contact Me
+                My Projects
               </a>
             </motion.button>
           </div>

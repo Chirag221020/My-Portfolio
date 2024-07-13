@@ -41,6 +41,7 @@
 .bar {
   display: flex;
   gap: 30px;
+  z-index: 999;
   /* }
 #icon-text{
     display: flex;
