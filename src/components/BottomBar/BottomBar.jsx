@@ -1,18 +1,19 @@
 import React from "react";
 import "./BottomBar.css";
-function BottomBar({Light}) {
+function BottomBar({ Light }) {
   return (
     <>
       <div className="nav-wrap">
-        <div className={!Light ? 'lightBottomBar' : 'bottomBar'}>
+        <div className={!Light ? "lightBottomBar" : "bottomBar"}>
           <div className="bar">
+            {/* -----------==========ICON 1=======----------------- */}
             <div id="icon-text" className="icon-size">
               <a href="#main" className="nav-color">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  id={!Light ? 'lightIcons' : 'icons'}
+                  id={!Light ? "lightIcons" : "icons"}
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -20,21 +21,20 @@ function BottomBar({Light}) {
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="lucide lucide-home"
-                
                 >
                   <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                   <polyline points="9 22 9 12 15 12 15 22" />
                 </svg>{" "}
               </a>
             </div>
-
+            {/* -----------==========ICON 2=======----------------- */}
             <div id="icon-text">
               <a href="#about" className="nav-color">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  id={!Light ? 'lightIcons' : 'icons'}
+                  id={!Light ? "lightIcons" : "icons"}
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -48,14 +48,14 @@ function BottomBar({Light}) {
                 </svg>{" "}
               </a>
             </div>
-
+            {/* -----------==========ICON 3=======----------------- */}
             <div id="icon-text">
               <a href="#work" className="nav-color">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  id={!Light ? 'lightIcons' : 'icons'}
+                  id={!Light ? "lightIcons" : "icons"}
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -69,13 +69,14 @@ function BottomBar({Light}) {
                 </svg>{" "}
               </a>
             </div>
+            {/* -----------==========ICON 4=======----------------- */}
             <div id="icon-text">
               <a href="#projects" className="nav-color">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  id={!Light ? 'lightIcons' : 'icons'}
+                  id={!Light ? "lightIcons" : "icons"}
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -91,14 +92,14 @@ function BottomBar({Light}) {
                 </svg>
               </a>
             </div>
-
+            {/* -----------==========ICON 5=======----------------- */}
             <div id="icon-text">
               <a href="#contact" className="nav-color">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  id={!Light ? 'lightIcons' : 'icons'}
+                  id={!Light ? "lightIcons" : "icons"}
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
