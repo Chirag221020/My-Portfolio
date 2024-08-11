@@ -26,7 +26,7 @@ function Work({Light}) {
       <div className="ability" id="top">
         <h2 className="my-ability">My Abilities</h2>
         <h1 className="Exp" id="bottom">
-          My Experience
+          My Developing Skills
         </h1>
       </div>
       <div className="skills">
@@ -34,7 +34,7 @@ function Work({Light}) {
       whileInView="animate">
           <div className="frontend">
             {" "}
-            <h1 id="Frontend-Developer">Frontend Developer</h1>{" "}
+            <h1 id="Frontend-Developer">Frontend Knowledge</h1>{" "}
           </div>
           <div className="lang">
             <div className="type1">
@@ -179,7 +179,7 @@ function Work({Light}) {
       whileInView="animate">
           <div className="frontend">
             {" "}
-            <h1 id="Electrical-Engineer">Electrical Engineer</h1>{" "}
+            <h1 id="Electrical-Engineer">Backend Knowledge</h1>{" "}
           </div>
           <div className="lang2">
             <div className="type1">
@@ -201,7 +201,7 @@ function Work({Light}) {
                   <path d="m9 12 2 2 4-4" />
                 </svg>{" "}
                 <div id="html">
-                  <h3 id="css">PLC</h3>
+                  <h3 id="css">Node.JS</h3>
                   <h4>Basic</h4>
                 </div>
               </div>
@@ -224,7 +224,7 @@ function Work({Light}) {
                   <path d="m9 12 2 2 4-4" />
                 </svg>
                 <div id="html">
-                  <h3 id="css">SCADA</h3> <h4>Intermidiate</h4>{" "}
+                  <h3 id="css">Express.JS</h3> <h4>Intermidiate</h4>{" "}
                 </div>
               </div>
 
@@ -246,7 +246,7 @@ function Work({Light}) {
                   <path d="m9 12 2 2 4-4" />
                 </svg>{" "}
                 <div id="html">
-                  <h3 id="css">Electric Machine</h3> <h4>Advanced</h4>
+                  <h3 id="css">C#</h3> <h4>Basic</h4>
                 </div>
               </div>
             </div>
@@ -269,7 +269,7 @@ function Work({Light}) {
                   <path d="m9 12 2 2 4-4" />
                 </svg>{" "}
                 <div id="html">
-                  <h3 id="css">Power Electronics</h3>
+                  <h3 id="css">MongoDB</h3>
                   <h4>Intermidiate</h4>
                 </div>
               </div>
@@ -292,7 +292,7 @@ function Work({Light}) {
                   <path d="m9 12 2 2 4-4" />
                 </svg>
                 <div id="html">
-                  <h3 id="css">E.V Technology</h3> <h4>Advanced</h4>{" "}
+                  <h3 id="css"> Postman</h3> <h4>Intermidiate</h4>{" "}
                 </div>
               </div>
 
@@ -314,7 +314,7 @@ function Work({Light}) {
                   <path d="m9 12 2 2 4-4" />
                 </svg>{" "}
                 <div id="html">
-                  <h3 id="css">Panel Manufacturing</h3> <h4>Advanced</h4>
+                  <h3 id="css">Restful API</h3> <h4>Advanced</h4>
                 </div>
               </div>
             </div>

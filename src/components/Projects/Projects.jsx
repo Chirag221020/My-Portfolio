@@ -84,7 +84,7 @@ function Projects({ Light }) {
   return (
     <div className="projects" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>My Projects</h1>
         <motion.div
           style={{ scaleX }}
           className={!Light ? "lightProgressBar" : "progressBar"}
